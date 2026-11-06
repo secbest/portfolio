@@ -6,6 +6,7 @@
   <title>Jasper Teo Kheng Cher | Portfolio</title>
   <meta name="description" content="Portfolio of Jasper Teo Kheng Cher, a Web Programming student at Gachon University.">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main-content">Skip to main content</a>
@@ -20,7 +21,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">🌙 Dark mode</button>
   </header>
 
   <main id="main-content" tabindex="-1">
@@ -50,6 +51,13 @@
       <h2 id="projects-title">Projects</h2>
       <p>Three projects from this course. Every link opens the live version.</p>
 
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="apps" aria-pressed="false">Apps</button>
+        <button type="button" data-filter="accessibility" aria-pressed="false">Accessibility</button>
+        <button type="button" data-filter="team" aria-pressed="false">Team</button>
+      </div>
+      <p id="filter-status" class="count" role="status">Showing 3 projects</p>
 
       <ul class="cards" id="cards">
         <li class="card" data-category="apps">
