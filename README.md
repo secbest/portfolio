@@ -16,4 +16,4 @@ Live site: https://secbest.github.io/portfolio/
 - `index.html`: the page
 - `css/style.css`: styles and light/dark colour tokens
 - `js/main.js`: theme toggle and project filter
-- `images/profile.jpg`: placeholder photo (replace with your own, same filename)
+- `images/profile.webp` and `images/profile.jpg`: my photo, 440x440, WebP with a JPEG fallback
